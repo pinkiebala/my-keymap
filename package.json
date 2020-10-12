@@ -1,0 +1,280 @@
+{
+  "name": "my-keymap",
+  "displayName": "my-keymap",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:my-keymap.markSet",
+    "onCommand:my-keymap.cancelMarkSet",
+    "onCommand:my-keymap.travelForwardParagraph",
+    "onCommand:my-keymap.travelBackwardParagraph",
+    "onCommand:my-keymap.cursorTop",
+    "onCommand:my-keymap.cursorBottom",
+    "onCommand:my-keymap.cursorHome",
+    "onCommand:my-keymap.cursorEnd",
+    "onCommand:my-keymap.cursorUp",
+    "onCommand:my-keymap.cursorRight",
+    "onCommand:my-keymap.cursorDown",
+    "onCommand:my-keymap.cursorLeft",
+    "onCommand:my-keymap.cursorWordEndRight",
+    "onCommand:my-keymap.cursorWordLeft"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+space",
+        "command": "my-keymap.markSet",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+g",
+        "command": "my-keymap.cancelMarkSet",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+g",
+        "command": "hideSuggestWidget",
+        "when": "suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "command": "my-keymap.travelForwardParagraph",
+        "when": "textInputFocus",
+        "key": "alt+k"
+      },
+      {
+        "command": "my-keymap.travelForwardParagraph",
+        "when": "textInputFocus",
+        "key": "alt+down"
+      },
+      {
+        "command": "my-keymap.travelBackwardParagraph",
+        "when": "textInputFocus",
+        "key": "alt+i"
+      },
+      {
+        "command": "my-keymap.travelBackwardParagraph",
+        "when": "textInputFocus",
+        "key": "alt+up"
+      },
+      {
+        "key": "shift+alt+,",
+        "command": "my-keymap.cursorTop",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+alt+.",
+        "command": "my-keymap.cursorBottom",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "my-keymap.cursorHome",
+        "when": "textInputFocus",
+        "key": "ctrl+a"
+      },
+      {
+        "command": "my-keymap.cursorHome",
+        "when": "textInputFocus",
+        "key": "home"
+      },
+      {
+        "command": "my-keymap.cursorEnd",
+        "when": "textInputFocus",
+        "key": "ctrl+e"
+      },
+      {
+        "command": "my-keymap.cursorEnd",
+        "when": "textInputFocus",
+        "key": "end"
+      },
+      {
+        "command": "my-keymap.cursorUp",
+        "when": "textInputFocus",
+        "key": "ctrl+i"
+      },
+      {
+        "command": "my-keymap.cursorUp",
+        "when": "textInputFocus",
+        "key": "up"
+      },
+      {
+        "command": "my-keymap.cursorRight",
+        "when": "textInputFocus",
+        "key": "ctrl+l"
+      },
+      {
+        "command": "my-keymap.cursorRight",
+        "when": "textInputFocus",
+        "key": "right"
+      },
+      {
+        "command": "my-keymap.cursorDown",
+        "when": "textInputFocus",
+        "key": "ctrl+k"
+      },
+      {
+        "command": "my-keymap.cursorDown",
+        "when": "textInputFocus",
+        "key": "down"
+      },
+      {
+        "command": "my-keymap.cursorLeft",
+        "when": "textInputFocus",
+        "key": "ctrl+j"
+      },
+      {
+        "command": "my-keymap.cursorLeft",
+        "when": "textInputFocus",
+        "key": "left"
+      },
+      {
+        "command": "my-keymap.cursorWordEndRight",
+        "when": "textInputFocus",
+        "key": "alt+l"
+      },
+      {
+        "command": "my-keymap.cursorWordEndRight",
+        "when": "textInputFocus",
+        "key": "alt+right"
+      },
+      {
+        "command": "my-keymap.cursorWordLeft",
+        "when": "textInputFocus",
+        "key": "alt+j"
+      },
+      {
+        "command": "my-keymap.cursorWordLeft",
+        "when": "textInputFocus",
+        "key": "alt+left"
+      },
+      {
+        "command": "deleteLeft",
+        "when": "textInputFocus",
+        "key": "ctrl+h"
+      },
+      {
+        "command": "deleteLeft",
+        "when": "textInputFocus",
+        "key": "backspace"
+      },
+      {
+        "command": "deleteWordLeft",
+        "when": "textInputFocus",
+        "key": "alt+h"
+      },
+      {
+        "command": "deleteWordLeft",
+        "when": "textInputFocus",
+        "key": "alt+backspace"
+      },
+      {
+        "command": "deleteRight",
+        "when": "textInputFocus",
+        "key": "ctrl+d"
+      },
+      {
+        "command": "deleteRight",
+        "when": "textInputFocus",
+        "key": "delete"
+      },
+      {
+        "command": "deleteWordRight",
+        "when": "textInputFocus",
+        "key": "alt+d"
+      },
+      {
+        "command": "deleteWordRight",
+        "when": "textInputFocus",
+        "key": "alt+delete"
+      },
+      {
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly",
+        "key": "alt+shift+k"
+      },
+      {
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly",
+        "key": "alt+shift+down"
+      },
+      {
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly",
+        "key": "alt+shift+i"
+      },
+      {
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly",
+        "key": "alt+shift+up"
+      },
+      {
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus",
+        "key": "ctrl+k"
+      },
+      {
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus",
+        "key": "down"
+      },
+      {
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus",
+        "key": "ctrl+i"
+      },
+      {
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus",
+        "key": "up"
+      },
+      {
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus",
+        "key": "ctrl+alt+k"
+      },
+      {
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus",
+        "key": "ctrl+alt+down"
+      },
+      {
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorFocus",
+        "key": "ctrl+alt+i"
+      },
+      {
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorFocus",
+        "key": "ctrl+alt+up"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.50.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "vscode-test": "^1.4.0"
+  }
+}
