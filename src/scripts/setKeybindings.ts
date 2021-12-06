@@ -10,8 +10,15 @@ interface KeybindingOutput {
   key?: string;
 }
 
+console.log("Export type:", process.env.TYPE);
+const isMac = process.env.TYPE === "mac";
 const PACKAGE_PATH = resolve(__dirname, "..", "..", "package.json");
-const KEYBINDINGS_PATH = resolve(__dirname, "..", "..", "keybindings.json");
+const KEYBINDINGS_PATH = resolve(
+  __dirname,
+  "..",
+  "..",
+  isMac ? `keybindings.mac.json` : `keybindings.json`
+);
 
 const pkg = JSON.parse(readFileSync(PACKAGE_PATH).toString());
 

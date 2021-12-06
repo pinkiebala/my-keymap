@@ -1,0 +1,175 @@
+[
+  {
+    "key": "cmd+space",
+    "command": "my-keymap.markSet",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+g",
+    "command": "my-keymap.cancelMarkSet",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+g",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "keys": [
+      "ctrl+k",
+      "ctrl+down"
+    ],
+    "command": "my-keymap.travelForwardParagraph",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "ctrl+i",
+      "ctrl+up"
+    ],
+    "command": "my-keymap.travelBackwardParagraph",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+,",
+    "command": "my-keymap.cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+.",
+    "command": "my-keymap.cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+a",
+    "command": "my-keymap.cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "my-keymap.cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+i",
+      "up"
+    ],
+    "command": "my-keymap.cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+l",
+      "right"
+    ],
+    "command": "my-keymap.cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+k",
+      "down"
+    ],
+    "command": "my-keymap.cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+j",
+      "left"
+    ],
+    "command": "my-keymap.cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "ctrl+l",
+      "ctrl+right"
+    ],
+    "command": "my-keymap.cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "ctrl+j",
+      "ctrl+left"
+    ],
+    "command": "my-keymap.cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+h",
+      "backspace"
+    ],
+    "command": "deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "ctrl+h",
+      "ctrl+backspace"
+    ],
+    "command": "deleteWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteWordRight",
+    "when": "textInputFocus"
+  },
+  {
+    "keys": [
+      "ctrl+shift+k",
+      "ctrl+shift+down"
+    ],
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "keys": [
+      "ctrl+shift+i",
+      "ctrl+shift+up"
+    ],
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "keys": [
+      "cmd+k",
+      "down"
+    ],
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+i",
+      "up"
+    ],
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "keys": [
+      "cmd+ctrl+k",
+      "cmd+ctrl+down"
+    ],
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "keys": [
+      "cmd+ctrl+i",
+      "cmd+ctrl+up"
+    ],
+    "command": "editor.action.addSelectionToPreviousFindMatch",
+    "when": "editorFocus"
+  }
+]

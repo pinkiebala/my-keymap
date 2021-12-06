@@ -7,12 +7,21 @@ This is my vscode customize keymap.
 `npm install -g vsce`
 `vsce package`
 
+### For Mac
+
+`TYPE=mac vsce package`
+
 ## Install
 
 1. Click VSCode extension icon on sidebar
 2. Click right top 3 points option
 3. Click `Install from VSIX...`
 4. Select the .vsix file from Packaging
+
+Note:
+
+- Linux set `caps-lock` as `ctrl`
+- Mac set `caps-lock` as `cmd`, `cmd` as `ctrl`, `global` as `caps-lock`
 
 ## Commands
 
