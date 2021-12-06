@@ -257,7 +257,8 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "vscode:prepublish": "yarn set-keybindings && yarn run compile",
+    "set-keybindings": "ts-node src/scripts/setKeybindings.ts",
     "compile": "tsc -p ./",
     "lint": "eslint src --ext ts",
     "watch": "tsc -watch -p ./",
